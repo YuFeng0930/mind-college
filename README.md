@@ -1,8 +1,8 @@
-# Responsive Website Delivery 🚚
+# Responsive Website MindCollege 🚚
 ## [Watch it on youtube](https://youtu.be/xOQU3YNHxJc)
-### Responsive Website Delivery
+### Responsive Website MindCollege
 
-- Website Delivery, using HTML, Sass and JavaScript.
+- Website MindCollege, using HTML, Sass and JavaScript.
 - Includes a dark and light mode.
 - Color customization.
 - Developed first with the Mobile First methodology, then for desktop.
@@ -10,4 +10,4 @@
 
 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
-![Delivery website](/preview.png)
+![MindCollege website](/preview.png)
