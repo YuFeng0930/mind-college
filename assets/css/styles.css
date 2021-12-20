@@ -2,41 +2,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
-  /*========== Colors ==========*/
-  --hue: 45;
-  --sat: 98%;
-  --first-color: hsl(var(--hue), var(--sat), 60%);
-  --first-color-light: hsl(var(--hue), var(--sat), 85%);
-  --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
-  --first-color-alt: hsl(var(--hue), var(--sat), 53%);
-  --title-color: hsl(var(--hue), 4%, 15%);
-  --text-color: hsl(var(--hue), 4%, 35%);
-  --text-color-light: hsl(var(--hue), 4%, 65%);
-  --body-color: hsl(var(--hue), 0%, 100%);
-  --container-color: #FFF;
-  --scroll-bar-color: hsl(var(--hue), 4%, 85%);
-  --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
-  /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-  /*========== Font weight ==========*/
-  --font-semi-bold: 600;
-  --font-bold: 700;
-  /*========== Margenes ==========*/
-  --mb-0-5: .5rem;
-  --mb-0-75: .75rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
+    --header-height: 3rem;
+    /*========== Colors ==========*/
+    --hue: 45;
+    --sat: 98%;
+    --first-color: #c3dfe2;
+    --first-color-light: #c3dfe2;
+    --first-color-lighten: #c3dfe2;
+    --first-color-alt: hsl(var(--hue), var(--sat), 53%);
+    --title-color: hsl(var(--hue), 4%, 15%);
+    --text-color: hsl(var(--hue), 4%, 35%);
+    --text-color-light: hsl(var(--hue), 4%, 65%);
+    --body-color: hsl(var(--hue), 0%, 100%);
+    --container-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue), 4%, 85%);
+    --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 2rem; 
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    /*========== Margenes ==========*/
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
 }
 
 @media screen and (min-width: 968px) {
@@ -231,6 +232,11 @@ body.dark-theme {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+#mind-title {
+    font-size: 3rem; 
+}
+
 /*=============== HOME ===============*/
 .home__container {
   row-gap: 3rem;
@@ -257,9 +263,9 @@ body.dark-theme {
   transition: .3s;
 }
 
-.button:hover {
-  background-color: var(--first-color-alt);
-}
+    .button:hover {
+        background-color: #38617c;
+    }
 
 .button__header {
   display: none;
@@ -306,7 +312,8 @@ body.dark-theme {
 
 /*=============== SERVICES ===============*/
 .services__container {
-  padding-top: 1rem;
+    padding-top: 1rem;
+   
 }
 
 .services__data {
@@ -325,9 +332,15 @@ body.dark-theme {
   margin-bottom: var(--mb-0-5);
 }
 
+#services {
+
+     
+}
+
 /*=============== APP ===============*/
 .app__container {
-  gap: 2.5rem;
+  gap: 3rem;
+  margin-top: 7vh; 
 }
 
 .app__data {
@@ -371,8 +384,8 @@ body.dark-theme {
 
 /*=============== FOOTER ===============*/
 .footer {
-  background-color: var(--first-color-lighten);
-  padding-bottom: 2rem;
+    background-color: #c3dfe2;
+    padding-bottom: 2rem;
 }
 
 .footer__container {
@@ -564,7 +577,7 @@ body.dark-theme {
     column-gap: 6rem;
   }
   .services__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .contact__container {
     grid-template-columns: 3fr 1.5fr 1.25fr;
